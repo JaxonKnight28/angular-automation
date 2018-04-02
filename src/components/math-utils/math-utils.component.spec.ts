@@ -1,4 +1,4 @@
-import { TestBed, async, inject } from '@angular/core/testing';
+import { TestBed, async } from '@angular/core/testing';
 import { MathUtilsComponent } from './math-utils.component';
 import { FormsModule } from '@angular/forms';
 import { MathUtilService } from '../../services/MathUtil.service';
