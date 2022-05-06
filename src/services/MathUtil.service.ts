@@ -3,6 +3,6 @@ import { Injectable } from '@angular/core';
 export class MathUtilService {
 
   add = function (firstValue: number, secondValue: number) {
-    return firstValue * secondValue;
+    return firstValue + secondValue;
   }
 }

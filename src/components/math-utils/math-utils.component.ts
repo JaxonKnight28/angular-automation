@@ -7,14 +7,14 @@ import { MathUtilService } from '../../services/MathUtil.service';
   styleUrls: ['./math-utils.component.css']
 })
 export class MathUtilsComponent {
-  constructor(private mathUtil: MathUtilService) {}
+  constructor(private mathUtil: MathUtilService) { }
 
-  addFirstvalue : number;
-  addSecondValue : number;
-  addedValue : number;
+  addFirstValue: number = 0;
+  addSecondValue: number = 0;
+  addedValue: number = 0;
 
-    add = function (firstValue: number, secondValue: number) {
-      this.addedValue = this.mathUtil.add(firstValue, secondValue);
-    }
+  add = function (firstValue: number, secondValue: number) {
+    this.addedValue = this.mathUtil.add(firstValue, secondValue);
+  }
 
 }
