@@ -8,23 +8,23 @@ import { StringUtilService } from '../../services/StringUtil.service';
 })
 export class StringUtilsComponent {
 
-  constructor(private stringUtil: StringUtilService) {}
-  lowercaseText : string = "";
+  constructor(private stringUtil: StringUtilService) { }
+  lowercaseText: string = "";
   uppercaseText: string = "";
-  concatenateTextOne;
-  concatenateTextTwo;
+  concatenateTextOne: string = '';
+  concatenateTextTwo: string = '';
   concatenatedTexts: string = ""
 
-  toLowercaseText = function (textToModify : string) {
+  toLowercaseText = function (textToModify: string) {
     this.lowercaseText = this.stringUtil.toLowercaseText(textToModify);
   }
 
-  toUppercaseText = function (textToModify : string) {
+  toUppercaseText = function (textToModify: string) {
     this.uppercaseText = this.stringUtil.toUppercaseText(textToModify);
   }
 
   concatenateTexts = function (textOne, textTwo) {
-      this.concatenatedTexts = this.stringUtil.concatenateTexts(textOne, textTwo);
+    this.concatenatedTexts = this.stringUtil.concatenateTexts(textOne, textTwo);
   }
 
 }

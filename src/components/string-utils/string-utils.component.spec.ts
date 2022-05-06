@@ -61,5 +61,18 @@ describe('String utils Component', () => {
         expect(stringUtilService.concatenateTexts(string1, string2)).toEqual('Hello World!');
     }));
 
+    it('should use more than one function', async(() => {
+
+        const fixture = TestBed.createComponent(StringUtilsComponent);
+
+        const stringUtilService = fixture.debugElement.injector.get(StringUtilService);
+
+        let string1 = 'HELLO, My nAmE iS '
+        string1 = stringUtilService.toLowercaseText(string1)
+
+        let string2 = 'Jaxon'
+        expect(stringUtilService.concatenateTexts(string1, string2)).toEqual('hello, my name is Jaxon');
+    }));
+
 
 });
